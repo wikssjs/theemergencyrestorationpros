@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Crawl-delay: 2
 
-Sitemap: https://www.theemergencyrestorationpros.com/sitemap-index.xml
+Sitemap: https://theemergencyrestorationpros.com/sitemap-index.xml
