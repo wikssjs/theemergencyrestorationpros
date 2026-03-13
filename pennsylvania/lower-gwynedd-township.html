@@ -79,17 +79,24 @@
 <!-- us-c7832f -->
 <!-- build-c7832f -->
 <nav class="fixed top-0 left-0 right-0 z-50 wr-498bdf" style="background:rgba(10,15,26,0.97);border-bottom:1px solid rgba(255,255,255,0.07)">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-    <a href="/" class="font-black text-lg text-white tracking-tight" style="letter-spacing:-0.02em">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+    <a href="/" class="font-black text-white min-w-0 truncate" style="font-size:clamp(0.85rem,3vw,1.125rem);letter-spacing:-0.02em;flex:1">
       TheEmergencyRestorationPros
     </a>
-    <div class="flex items-center gap-3">
+    <div class="flex items-center gap-2 flex-shrink-0">
       <span class="hidden sm:flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full" style="background:rgba(239,68,68,0.15);color:#f87171">
         <span class="w-2 h-2 rounded-full bg-red-400 animate-pulse inline-block"></span>
         24/7 EMERGENCY
       </span>
+      <!-- Mobile: icon only -->
       <a href="tel:18005550100"
-         class="flex items-center gap-2 font-black text-sm px-4 py-2.5 rounded-full text-white transition-all"
+         class="flex sm:hidden items-center justify-center w-10 h-10 rounded-full text-white flex-shrink-0"
+         style="background:#16a34a" aria-label="Call now">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.19 1.18C.18.6.57.05 1.14.01h3A2 2 0 016.1 1.77c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L5.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.77 2.04z"/></svg>
+      </a>
+      <!-- Desktop: icon + number -->
+      <a href="tel:18005550100"
+         class="hidden sm:flex items-center gap-2 font-black text-sm px-4 py-2.5 rounded-full text-white transition-all"
          style="background:#16a34a;letter-spacing:0.01em">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.19 1.18C.18.6.57.05 1.14.01h3A2 2 0 016.1 1.77c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L5.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.77 2.04z"/></svg>
         1-800-555-0100
@@ -280,7 +287,8 @@
     </div>
 
     <!-- Secondary services -->
-    <div class="grid gap-6 mt-5" style="grid-template-columns: repeat(4, 1fr)">
+    <style>.wr-sec-grid{display:grid;grid-template-columns:repeat(2,1fr)}@media(min-width:640px){.wr-sec-grid{grid-template-columns:repeat(4,1fr)}}</style>
+    <div class="wr-sec-grid gap-6 mt-5">
       <div class="rounded-2xl border border-slate-100 shadow-md p-4 text-center bg-white" style="border-color:var(--p1)">
         <p class="text-[11px] font-black uppercase tracking-widest mb-1 text-primary-700">🚨 Emergency board-up / tarping</p>
         <p class="font-bold text-slate-800 text-sm">$513 — $1848</p>
