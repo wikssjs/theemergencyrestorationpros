@@ -138,6 +138,12 @@ a{text-decoration:none;color:inherit}
 /* ── Mobile sticky ── */
 .hp-sticky{position:fixed;bottom:0;left:0;right:0;z-index:50;background:var(--p600);display:flex;align-items:center;justify-content:center;gap:.625rem;padding:1rem;font-weight:800;font-size:1rem;color:#fff}
 @media(min-width:640px){.hp-sticky{display:none}}
+/* ── Mobile hero buttons fix ── */
+@media(max-width:639px){
+  .hp-hero-bottom{flex-direction:column;align-items:flex-start}
+  .hp-ctas{width:100%}
+  .hp-btn-call,.hp-btn-ghost{width:100%;justify-content:center;white-space:normal;text-align:center;box-sizing:border-box}
+}
 </style>
 </head>
 <body>
